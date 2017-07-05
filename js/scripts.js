@@ -3,10 +3,27 @@ var add = function(number1, number2) {
   return number1 + number2;
 };
 
-var number1 = parseInt(prompt("enter a number: "));
-var number2 = parseInt(prompt("enter another number: "));
+var div = function(number1, number2) {
+  return number1 / number2;
+};
 
-alert(add(number1, number2));
+var sub = function(number1, number2) {
+  return number1 - number2;
+};
+
+var mult = function(number1, number2) {
+  return number1 * number2;
+};
+
+var BMI = function (number1, number2) {
+  return (number1/(number2*number2)) * 703;
+}
+
+var number1 = parseInt(prompt("enter your weight (lbs): "));
+var number2 = parseInt(prompt("enter height(in): "));
+
+var result = BMI(number1, number2);
+alert(result);
 
 //this is a comment
 
@@ -18,11 +35,6 @@ var greeting = function(whattosay) {
   alert(whattosay);
 }
 greeting("Hi " + name + "! Your are " + age + " years old! And your favorite food is " + faveFood);
-
-
-var div = function(number1, number2) {
-  return number1 / number2;
-};
 
 var remainder = function(number1, number2) {
 	return number1 % number2
